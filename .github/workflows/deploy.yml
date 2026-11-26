@@ -72,6 +72,8 @@ jobs:
             docker compose logs --tail=80 web
             exit 1
           fi
+          docker compose exec -T web python manage.py check
+          docker compose exec -T web python manage.py test landing --noinput
           if docker inspect edge_nginx >/dev/null 2>&1; then
             docker exec edge_nginx wget -qO- --header="Host: workout.webigram.ir" http://workout-fito:8000/health/
           fi

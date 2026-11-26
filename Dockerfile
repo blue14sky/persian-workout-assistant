@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends libpq5 \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
+RUN python manage.py collectstatic --noinput
 
 RUN addgroup --system app && adduser --system --ingroup app app \
     && chown -R app:app /app
