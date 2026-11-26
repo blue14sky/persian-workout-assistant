@@ -31,3 +31,10 @@
 4. انتخاب نام
 5. بررسی امکان‌پذیری و انتخاب فناوری
 6. طراحی و آزمایش نسخه اولیه
+
+
+## Landing page and PWA prototype
+
+The first release contains a Persian RTL landing page at `/`, a conceptual workout preview, FAQs, early-access email signup stored in PostgreSQL, and PWA shell assets. **It is not a working workout assistant yet.** The existing `/health/` endpoint remains unchanged.
+
+See [docs/landing-pwa.md](docs/landing-pwa.md) for development checks, data capture, deployment, and the HTTPS prerequisite for installable PWA behavior.
