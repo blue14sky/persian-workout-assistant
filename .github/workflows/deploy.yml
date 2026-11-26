@@ -27,7 +27,8 @@ jobs:
 
           DEPLOY_PATH="/opt/apps/azin-workout"
           mkdir -p "$DEPLOY_PATH"
-          cp -a "$GITHUB_WORKSPACE"/. "$DEPLOY_PATH"/
+          # Deploy source files, not Git metadata. Preserve server-only .env.
+          tar -C "$GITHUB_WORKSPACE" --exclude="./.git" --exclude="./.env" -cf - . | tar -C "$DEPLOY_PATH" -xf -
           cd "$DEPLOY_PATH"
 
           # Create persistent secrets only on the first deployment.
@@ -51,4 +52,15 @@ jobs:
           EOF
           fi
 
+          docker network inspect public_proxy >/dev/null
+          docker compose config --quiet
           docker compose up -d --build --remove-orphans
+
+          # Application must not publish the internal port on the host.
+          container_id="$(docker compose ps -q web)"
+          test -n "$container_id"
+          test -z "$(docker port "$container_id" 8000/tcp)"
+          docker compose exec -T web python -c "import urllib.request; assert urllib.request.urlopen('http://127.0.0.1:8000/health/').status == 200"
+          if docker inspect edge_nginx >/dev/null 2>&1; then
+            docker exec edge_nginx wget -qO- --header="Host: workout.webigram.ir" http://workout-fito:8000/health/
+          fi
