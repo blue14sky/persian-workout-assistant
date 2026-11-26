@@ -1,0 +1,121 @@
+{% load static %}
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1015">
+  <meta name="description" content="فیتو، یک ایده تازه برای تبدیل برنامه تمرینی مربی به چک‌لیستی ساده و قابل ثبت. برای خبرهای نسخه آزمایشی همراه ما باش.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="فیتو | برنامه مربی، کنار تو در باشگاه">
+  <meta property="og:description" content="برنامه‌ای که مربی داده، همان برنامه‌ای که با آن تمرین می‌کنی؛ ساده‌تر و منظم‌تر.">
+  <meta property="og:locale" content="fa_IR">
+  <link rel="icon" type="image/svg+xml" href="{% static 'landing/icon.svg' %}">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="{% static 'landing/styles.css' %}">
+  <title>فیتو | برنامه مربی، کنار تو در باشگاه</title>
+</head>
+<body>
+  <a href="#main" class="skip-link">رفتن به محتوا</a>
+  <div class="page-wrap">
+    <header class="site-header container">
+      <a class="brand" href="/" aria-label="فیتو، صفحه اصلی">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>فیتو<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="ناوبری اصلی">
+        <a href="#how-it-works">چطور کار می‌کند؟</a>
+        <a href="#why-fito">چرا فیتو؟</a>
+        <a href="#faq">سؤال‌های رایج</a>
+      </nav>
+      <a class="nav-cta" href="#early-access">خبرم کن <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero container">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="pulse-dot"></span> یک تجربه تازه برای تمرین <span class="eyebrow-tag">به‌زودی</span></div>
+          <h1>برنامه مربی‌ات،<br><span class="accent">همراه هر تکرار.</span></h1>
+          <p class="hero-lead">دیگر لازم نیست بین عکس برنامه، یادداشت‌ها و ثبت وزنه‌ها جابه‌جا شوی. داریم فیتو را می‌سازیم تا برنامه‌ای که از مربی گرفتی، به یک همراه ساده و قابل‌ویرایش برای تمرین تبدیل شود.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#early-access">اولین نفرها باخبر می‌شن <span aria-hidden="true">↖</span></a>
+            <a class="btn btn-text" href="#how-it-works">ببین چطور کار می‌کند <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="tiny-note">نسخه آزمایشی در دست طراحی است؛ امکانات معرفی‌شده هنوز منتشر نشده‌اند.</p>
+        </div>
+
+        <div class="hero-visual" aria-label="نمای مفهومی از رابط برنامه تمرینی فیتو">
+          <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+          <div class="floating-note note-top"><span class="note-icon">✦</span><span>از عکس برنامه تا یک لیست مرتب</span></div>
+          <div class="app-phone">
+            <div class="phone-speaker"></div>
+            <div class="phone-content">
+              <div class="phone-head"><span class="phone-logo">fito<span>.</span></span><span class="phone-avatar">ف</span></div>
+              <p class="phone-greeting">سلام، ورزشکار! 👋</p>
+              <div class="phone-title">تمرین امروزت</div>
+              <div class="phone-session"><span>روز اول · بالاتنه</span><span>برنامه مربی</span></div>
+              <div class="progress"><span></span></div>
+              <div class="exercise exercise-done"><span class="exercise-state">✓</span><div class="exercise-copy"><strong>پرس سینه هالتر</strong><small>۳ ست × ۱۰ تکرار</small></div><span class="exercise-tag">انجام شد</span></div>
+              <div class="exercise"><span class="exercise-state circle"></span><div class="exercise-copy"><strong>پرس بالا سینه دمبل</strong><small>۳ ست × ۱۲ تکرار</small></div><span class="exercise-arrow">‹</span></div>
+              <div class="exercise"><span class="exercise-state circle"></span><div class="exercise-copy"><strong>قفسه سینه سیم‌کش</strong><small>۳ ست × ۱۵ تکرار</small></div><span class="exercise-arrow">‹</span></div>
+              <div class="phone-bottom"><span>⌂<small>خانه</small></span><span>▤<small>برنامه</small></span><span>◷<small>تاریخچه</small></span></div>
+            </div>
+          </div>
+          <div class="floating-note note-bottom"><span class="check-icon">✓</span><span>تمرینت رو راحت‌تر دنبال کن</span></div>
+          <span class="mockup-caption">پیش‌نمایش مفهومی · نه تصویر محصول نهایی</span>
+        </div>
+      </section>
+
+      <section class="trust-strip"><div class="container trust-inner"><span>یک ایده ساده:</span><strong>برنامه مربی‌ات سر جایش می‌ماند</strong><span class="trust-divider"></span><strong>اجرایش راحت‌تر می‌شود</strong><span class="trust-divider"></span><strong>پیشرفتت گم نمی‌شود</strong></div></section>
+
+      <section class="section container" id="how-it-works">
+        <div class="section-intro"><span class="section-label">مسیر پیشنهادی</span><h2>از عکس برنامه<br><span class="muted">تا آخرین ست.</span></h2><p>سه مرحله، بدون پیچیدگی اضافه. این تجربه‌ای است که قرار است در نسخه آزمایشی بسنجیم.</p></div>
+        <div class="steps">
+          <article class="step-card"><span class="step-index">۰۱</span><div class="step-illustration"><div class="mini-paper"><i></i><i></i><i></i><i></i></div><span class="mini-badge">↗</span></div><h3>برنامه‌ات رو بیار</h3><p>از برنامه‌ای که مربی داده یک عکس واضح بگیر یا متن آن را وارد کن.</p></article>
+          <article class="step-card"><span class="step-index">۰۲</span><div class="step-illustration"><div class="mini-list"><i><b></b><em></em></i><i><b></b><em></em></i><i><b></b><em></em></i></div><span class="mini-badge">✎</span></div><h3>بررسی و مرتبش کن</h3><p>حرکت‌ها، ست‌ها و تکرارها را در یک جدول ببین؛ هر موردی را خودت تأیید یا اصلاح کن.</p></article>
+          <article class="step-card"><span class="step-index">۰۳</span><div class="step-illustration"><div class="mini-checks"><span>✓</span><span>✓</span><span>○</span></div><span class="mini-badge">✓</span></div><h3>تمرینت رو ثبت کن</h3><p>هر ست را که انجام دادی ثبت کن و برای جلسه بعد یک سابقه روشن داشته باش.</p></article>
+        </div>
+      </section>
+
+      <section class="section feature-section" id="why-fito">
+        <div class="container feature-grid">
+          <div class="feature-copy"><span class="section-label">برای تمرین واقعی، نه حرف اضافه</span><h2>مربی برنامه رو می‌ده.<br><span class="accent">تو اجراش می‌کنی.</span></h2><p>فیتو قرار نیست جای مربی‌ات تصمیم بگیرد یا برایت برنامه تازه بنویسد. قرار است اجرای همان برنامه‌ای که داری را آسان‌تر کند.</p>
+            <div class="feature-list"><div><span class="feature-bullet">✓</span><span>رابط فارسی، مناسب استفاده با یک دست در باشگاه</span></div><div><span class="feature-bullet">✓</span><span>امکان اصلاح برنامه قبل از استفاده</span></div><div><span class="feature-bullet">✓</span><span>ثبت ساده ست و تکرار، بدون شلوغی</span></div></div>
+          </div>
+          <div class="feature-panel"><span class="panel-overline">فلسفه فیتو</span><div class="panel-quote">«کمتر درگیر گوشی.<br><span>بیشتر درگیر تمرین.</span>»</div><div class="panel-line"></div><p>هدف ما ساخت یک ابزار سبک و کاربردی است؛ نه یک داشبورد پر از عددهایی که موقع ست آخر حوصله‌شان را نداری.</p><div class="panel-decoration">↗</div></div>
+        </div>
+      </section>
+
+      <section class="section container faq-section" id="faq">
+        <div class="section-intro compact"><span class="section-label">سؤال‌های رایج</span><h2>قبل از اینکه بپرسی...</h2></div>
+        <div class="faq-list">
+          <details><summary>فیتو الان قابل استفاده است؟ <span aria-hidden="true">+</span></summary><p>هنوز نه. در مرحله طراحی و اعتبارسنجی هستیم و در حال آماده‌کردن تجربه اولیه برای آزمایش با کاربران واقعی هستیم.</p></details>
+          <details><summary>فیتو خودش برای من برنامه تمرینی می‌نویسد؟ <span aria-hidden="true">+</span></summary><p>نه، تمرکز اولیه روی استفاده ساده‌تر از برنامه‌ای است که مربی‌ات به تو داده؛ فیتو جای مربی نیست.</p></details>
+          <details><summary>از روی هر عکس می‌تواند برنامه را بخواند؟ <span aria-hidden="true">+</span></summary><p>این قابلیت هنوز در حال بررسی است. هدف شروع با عکس‌های واضح و امکان بازبینی و اصلاح دستی اطلاعات است.</p></details>
+          <details><summary>روی گوشی هم نصب می‌شود؟ <span aria-hidden="true">+</span></summary><p>این وب‌سایت به‌صورت PWA طراحی شده و مرورگرهای سازگار امکان افزودن آن به صفحه اصلی را فراهم می‌کنند. قابلیت‌های اصلی برنامه هنوز در دست ساخت‌اند.</p></details>
+          <details><summary>فیتو رایگان خواهد بود؟ <span aria-hidden="true">+</span></summary><p>هنوز مدل قیمت‌گذاری مشخص نشده است. اول می‌خواهیم مطمئن شویم واقعاً مشکلی را برای ورزشکاران حل می‌کنیم.</p></details>
+        </div>
+      </section>
+
+      <section class="cta-section" id="early-access"><div class="container cta-grid">
+        <div class="cta-copy"><span class="section-label">اول راهیم، ولی جدی</span><h2>برای شروعِ بهتر<br><span class="accent">کنارمون باش.</span></h2><p>می‌خواهی وقتی نسخه آزمایشی فیتو آماده شد باخبر شوی؟ ایمیلت را بگذار. فقط درباره فیتو و فرصت تست محصول به تو پیام می‌دهیم.</p></div>
+        <div class="signup-card">
+          <h3>خبرم کن وقتی آماده شد</h3><p>ثبت‌نام برای اطلاع‌رسانی نسخه آزمایشی</p>
+          {% if messages %}<div class="form-messages" role="status" aria-live="polite">{% for message in messages %}<div class="message message-{{ message.tags }}">{{ message }}</div>{% endfor %}</div>{% endif %}
+          <form action="{% url 'signup' %}" method="post" class="signup-form">
+            {% csrf_token %}
+            <label for="signup-email">ایمیل شما</label>
+            <input id="signup-email" name="email" type="email" placeholder="you@example.com" maxlength="254" autocomplete="email" dir="ltr" required>
+            <div class="visually-hidden" aria-hidden="true"><label for="signup-website">Website</label><input id="signup-website" name="website" tabindex="-1" autocomplete="off"></div>
+            <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>موافقم فقط برای اطلاع‌رسانی درباره فیتو و نسخه آزمایشی به این ایمیل پیام ارسال شود.</span></label>
+            <button type="submit" class="btn btn-primary btn-full">ثبت ایمیل <span aria-hidden="true">↖</span></button>
+          </form>
+          <small>اطلاعات شما برای فهرست اطلاع‌رسانی ذخیره می‌شود؛ هر زمان می‌توانید برای درخواست حذف ایمیل از طریق همین وب‌سایت با تیم تماس بگیرید.</small>
+        </div>
+      </div></section>
+    </main>
+    <footer class="footer container"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>فیتو<span class="brand-dot">.</span></span></a><p>همراه برنامه مربی، نه جایگزین آن.</p><span>© {% now "Y" %} فیتو · ساخته‌شده برای تمرین‌های واقعی</span></footer>
+  </div>
+  <script defer src="{% static 'landing/app.js' %}"></script>
+</body>
+</html>
